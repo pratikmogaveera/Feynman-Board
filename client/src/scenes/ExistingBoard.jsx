@@ -53,8 +53,8 @@ function ExistingBoard() {
                 <div className="w-full h-[400px]">
                     <div className="bg-white w-full h-full px-2 py-4 rounded-md">
                         <p className="text-[20px] font-normal">
-                            {/* {data ? data.content.map(item => <span key={item.cont_id} className={`${item.state === 4 ? "text-green-400" : item.state === 3 ? "text-yellow-400" : item.state == 2 ? "text-blue-400" : "text-red-400"}`}>{item.text} </span>) : "No Data"} */}
-                            {data ? data.content.map(item => <span key={item.cont_id} className={`${item.state === 4 ? "bg-green-400" : item.state === 3 ? "bg-yellow-400" : item.state == 2 ? "bg-blue-400" : "bg-red-400"}`}>{item.text} </span>) : "No Data"}
+                            {/* {data ? data.content.map(item => <span key={item.cont_id} className={`leading-[28px] ${item.state === 4 ? "text-green-400" : item.state === 3 ? "text-yellow-400" : item.state == 2 ? "text-blue-400" : "text-red-400"}`}>{item.text} </span>) : "No Data"} */}
+                            {data ? data.content.map(item => <span key={item.cont_id} className={`leading-[28px] ${item.state === 4 ? "bg-green-400" : item.state === 3 ? "bg-yellow-400" : item.state == 2 ? "bg-blue-400" : "bg-red-400"}`}>{item.text} </span>) : "No Data"}
                         </p>
                     </div>
                 </div>

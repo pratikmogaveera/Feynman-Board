@@ -26,7 +26,7 @@ const Dashboard = () => {
 
     // If we get back data from the Database we render it using an Array of components or Display "No Data" text.
     const elements = data.length
-        ? data.map(item => <DashboardCard key={item.doc_id} {...item} />)
+        ? data.map((item, i) => <DashboardCard key={item.doc_id} {...item} index={i}/>)
         : <p className="w-full h-full flex items-center justify-center text-[42px]">No Data.</p>
 
     return (
