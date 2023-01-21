@@ -21,6 +21,7 @@ const Dashboard = () => {
     async function getData() {
         // We request the Database for all the documents by the user.
         const { data: result } = await axios.get(`http://localhost:3001/${username}`)
+            .then((res) => console.log(res))
         setData(result)
     }
 
